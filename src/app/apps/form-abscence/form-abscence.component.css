@@ -1,0 +1,27 @@
+/* CSS Files */
+@import url('https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+@import url('https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-4/assets/css/contact-4.css');
+/* Style général pour les inputs de fichier */
+input[type="file"] {
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Changer l'apparence au survol */
+input[type="file"]:hover {
+  background: #e1e1e1;
+}
+
+/* Style pour la label du champ de fichier */
+.form-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Améliorer la visibilité des textes */
+.form-label span {
+  color: red; /* pour le caractère obligatoire */
+}

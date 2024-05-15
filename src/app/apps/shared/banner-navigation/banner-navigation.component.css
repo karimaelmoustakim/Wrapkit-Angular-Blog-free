@@ -1,0 +1,37 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+  padding: 10px 20px; /* Optimal padding for vertical alignment and spacing */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #89a677; /* Bright white text for contrast */
+  font-size: 18px; /* Slightly larger font size for readability */
+  font-weight: 500; /* Medium weight for clarity */
+  padding: 10px 15px; /* Adequate padding for easy interaction */
+  margin: 0 5px; /* Margin between items */
+  text-transform: uppercase; /* Uppercase for a consistent, professional look */
+}
+
+/* Hover and Active States */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: #CCCCCC; /* Light gray for hover and active states */
+  background-color: transparent; /* Maintain a transparent background on hover */
+  border-bottom: 3px solid #FFFFFF; /* White bottom border as a hover effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+  .navbar-toggler {
+    background-color: #ffffff; /* Ensure the toggler is visible */
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Custom icon color */
+  }
+}

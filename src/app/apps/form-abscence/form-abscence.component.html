@@ -1,0 +1,56 @@
+<section class="bg-light py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <!-- Include your image here -->
+        <img src="./assets/images/background/img_1.png" class="img-fluid rounded" alt="Descriptive Alt Text">
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <form action="#!" enctype="multipart/form-data">
+            <div class="p-4 p-xl-5">
+              <!-- Form fields here -->
+              <div class="mb-3">
+                <label for="employeeName" class="form-label">Nom de l'employé:</label>
+                <input type="text" class="form-control" id="employeeName" required>
+              </div>
+              <div class="mb-3">
+                <label for="startDate" class="form-label">Date de début d'absence:</label>
+                <input type="date" class="form-control" id="startDate" required>
+              </div>
+              <div class="mb-3">
+                <label for="endDate" class="form-label">Date de fin d'absence:</label>
+                <input type="date" class="form-control" id="endDate" required>
+              </div>
+              <div class="mb-3">
+                <label for="absenceType" class="form-label">Type d'absence:</label>
+                <select class="form-control" id="absenceType" required>
+                  <option value="unpaid">Absence non rémunérée</option>
+                  <option value="paid">Absence rémunérée</option>
+                  <option value="sick">Maladie</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="absenceReason" class="form-label">Raison de l'absence:</label>
+                <textarea class="form-control" id="absenceReason" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="medicalCertificate" class="form-label">Certificat de maladie:</label>
+                <input type="file" class="form-control" id="medicalCertificate" accept=".pdf,.jpg,.jpeg,.png">
+              </div>
+
+
+              <button class="btn btn-primary btn-lg" type="submit">Envoyer la demande</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
